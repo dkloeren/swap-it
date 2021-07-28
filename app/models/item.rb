@@ -3,5 +3,5 @@ class Item < ApplicationRecord
   has_many :requests, dependent: :destroy
 
   validates :name, :category, :description, :make, presence: true
-  validates :name, uniquness: true
+  validates :name, uniqueness: true
 end
